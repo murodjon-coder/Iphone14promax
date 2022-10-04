@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <title>IOS Calculator</title>
+</head>
+<body>
+    <div class="box">
+        <div class="bosh-menu">
+            <div class="operator-name">MI</div>
+            <div class="dynamic-island"></div>
+            <div class="dynamic-island-camera"></div>
+            <div class="operator-icons">
+              <i class="bi bi-reception-4"></i>
+              5G
+              <div class="battery">100</div>
+            </div>
+            <div class="date-area">
+              
+              <span class="month"></span>
+              <span class="day-name"></span>
+              <span class="day"></span>
+            </div>
+    
+            <div class="clock-area"></div>
+            <div class="widget-area">
+              <span class="widget"><i class="bi bi-cloud-moon-fill"></i> 21°</span>
+              <span class="widget bell"><i class="bi bi-bell-fill sound"></i>
+                <i class="bi bi-bell-slash-fill quiet"></i></span>
+              <span class="widget"><i class="bi bi-spotify spotify"></i></span>
+              <span class="widget"><i class="bi bi-fuel-pump-fill fuelWidgetIcon"></i></span>
+            </div>
+    
+            <div class="notification">
+              <a href="https://www.instagram.com/" target="_blank">
+              <div><img class="img" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" width="14" />
+                <b>Instagram.com</b></div>
+              <div class="notification-text">Click to contact Coding Maker!</div></a>
+            </div>
+            <div class="flash-and-camera">
+              <img src="img-L.png" width="20"/>
+              <i class="bi bi-camera-fill"></i>
+            </div>
+    
+            <div class="line"></div>
+            <div class="bell-animation-area"></div>
+            <div class="bell-animation">
+              <span class="ntf-1"><i class="bi bi-bell-slash-fill"></i> <span>Quiet Mode On</span></span>
+              <span class="ntf-2"><i class="bi bi-bell-fill"></i> <span>Quiet Mode Off</span></span>
+            </div>
+            
+            <i class="bi bi-geo-alt-fill"></i>
+            <div class="fuel-area">
+              <div class="maps-phone">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d115949.41189889482!2d69.30417578728077!3d41.34227135036593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spetrol%20station!5e1!3m2!1suz!2s!4v1664882313444!5m2!1suz!2s" width="110" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="fuel-ntf-app">
+                <span><b>Aim:</b> Petrol Ofisi</span><br>
+                <span><b>remaining time:</b> 15 min</span><br>
+                <span><b>mode of transportationi:</b> Car</span>
+              </div>
+            </div>
+            
+            <i class="bi bi-soundwave"></i>
+            <div class="music-player">
+              <div>
+                <img src="photo_2022-10-04_16-42-17.jpg" alt="Music" class="music-poster">
+              </div>
+        
+              <div class="music-details">
+                <p>Kamelia (slowed)</p>
+                <p class="c-gray">To Drive the Cold Winter Away</p>
+        
+                <audio id="sarki" loop controls 
+                src="Kamelia (slowed).mp3"></audio>
+        
+                <div class="player">
+                    <i class="bi bi-skip-backward-fill"></i>
+                    <button id="oynat">
+                      <i class="bi bi-play-fill"></i>
+                      <i class="bi bi-pause-fill"></i>
+                    </button>
+                    <i class="bi bi-skip-forward-fill"></i>
+                    <i class="bi bi-cast"></i>
+                </div>
+                <!-- <input type="range" id="ses" max=100 min=0 value=10> -->
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="rol">
+            <div class="result">
+                    <span>0</span>
+            </div>
+            <div class="buttons">
+                <button class="item item1 clear">AC</button>
+                <button class="item item1 negative" value="+">+/-</button>
+                <button class="item percent sign" value="%">%</button>
+                <button class="item item3 sign" value="/">/</button>
+                <button class="item numbers" value="7">7</button>
+                <button class="item numbers" value="8">8</button>
+                <button class="item numbers" value="9">9</button>
+                <button class="item item3 sign" value="x">x</button>
+                <button class="item numbers" value="4">4</button>
+                <button class="item numbers" value="5">5</button>
+                <button class="item numbers" value="6">6</button>
+                <button class="item item3 sign" value="-">-</button>
+                <button class="item numbers" value="1">1</button>
+                <button class="item numbers" value="2">2</button>
+                <button class="item numbers" value="3">3</button>
+                <button class="item item3 sign" value="+">+</button>
+                <button class="item itemzero numbers" value="0">0</button>
+                <button class="item comm3">,</button>
+                <button class="item item3 equals">=</button>
+            </div>
+        </div>
+        </div>
+        <i class="btn btn1"></i>
+        <i class="btn btn2"></i>
+        <i class="btn btn3"></i>
+        <i class="rightSideBtn"></i>
+        <div class="line_c"></div>
+    </div>
+    
+    <audio class="audio" src="images/ES_Button Push 3 - SFX Producer.mp3" controls hidden></audio>
+    <script src="index.js"></script>
+</body>
+</html>
